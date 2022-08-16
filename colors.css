@@ -1,0 +1,29 @@
+.Gradient {
+    background: linear-gradient(90deg, #89F7FE 0%, #66A6FF 100%);
+    mix-blend-mode: hard-light;
+    opacity: 0.6;
+    filter: blur(100px);
+    border-radius: 360px;
+    width: 460px;
+    height: 460px;
+}
+
+.gradient__btn {
+    background: linear-gradient(90deg, #C471F5 0%, #FA71CD 100%);
+    box-shadow: 0px 0px 30px rgba(250, 113, 205, 0.4);
+    border-radius: 32px;
+}
+
+.gradient__text {
+    color: transparent;
+    background-clip: text;
+    background-image: var(--gradient-pink);
+}
+
+.gradient__border {
+    border-image: linear-gradient(90deg, #C471F5 0%, #FA71CD 100%) 5;
+}
+
+.gradient2 {
+    background: linear-gradient(90deg, #C471F5 0%, #FA71CD 100%);
+}

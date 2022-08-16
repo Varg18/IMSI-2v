@@ -1,0 +1,44 @@
+.review {
+    margin-top: 200px;
+    height: 848px;
+}
+
+.review__title-secondary {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    grid-column: 1 / 5;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.2px;
+    color: var(--color-white);
+    grid-row: 2;
+    grid-column: 1 / 8;
+    margin-top: -24px;
+    margin-bottom: 40px;
+}
+
+.video__container {
+    grid-row: 3;
+    grid-column: 1 / 13;
+    position: relative;
+}
+
+.review__bg {
+    width: 805px;
+    height: 805px;
+    position: absolute;
+    z-index: -1;
+    border: 1px solid red;
+    top: -15%;
+    left: 14%;
+    border-radius: 50%;
+    background: var(--gradient-blue);
+    mix-blend-mode: hard-light;
+    opacity: 0.6;
+    filter: blur(125px);
+}
