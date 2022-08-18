@@ -78,3 +78,4 @@ const splideArticles = new Splide('#image-carousel', {
     pagination: false,
     gap: 15
 }).mount();
+
