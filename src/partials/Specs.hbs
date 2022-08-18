@@ -8,8 +8,10 @@
       <div class="package__type">
         <h3 class="package__title">Комплектация</h3>
         <div class="package__btn">
-          <button class="type__bulk bulk">Bulk</button>
-          <button class="type__oem oem">OEM</button>
+          {{!-- <button class="type__bulk bulk">Bulk</button>
+          <button class="type__oem oem">OEM</button> --}}
+            <button class="tablinks type__bulk bulk active" onclick="changeTab(event, 'Bulk')">Bulk</button>
+            <button class="tablinks type__oem oem" onclick="changeTab(event, 'Oem')">OEM</button>
         </div>
         <p class="type__descr">Описание</p>
         <span class="type__text">
@@ -24,8 +26,8 @@
         </span>
         <div class="type__order">
           <div class="order__price">
-            <span class="old__price">50 000 ₽</span>
-            <span class="new__price">44 000 ₽</span>
+            <span class="old__price" id="old__price">75 000 ₽</span>
+            <span class="new__price" id="new__price">69 000 ₽</span>
           </div>
           <button class="order__btn btn__primary">Заказать</button>
         </div>
@@ -80,4 +82,27 @@
       </div>
 
     </div>
+
+
+    <script>
+  function changeTab(evt, type) {
+
+    tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      evt.currentTarget.className += " active";
+
+      if(type == "Bulk")
+      {
+        document.getElementById("old__price").innerHTML = "75 000 ₽"
+        document.getElementById("new__price").innerHTML = "69 000 ₽"
+      }
+      else if(type == "Oem")
+      {
+        document.getElementById("old__price").innerHTML = "50 000 ₽"
+        document.getElementById("new__price").innerHTML = "44 000 ₽"
+      }
+    }
+</script>
   </section>
