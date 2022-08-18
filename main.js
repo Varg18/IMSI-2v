@@ -78,3 +78,11 @@ const splideArticles = new Splide('#image-carousel', {
     pagination: false,
     gap: 15
 }).mount();
+
+function changeTab(evt, cityName) {
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active";
+}
