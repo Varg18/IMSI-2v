@@ -1,5 +1,5 @@
-<footer class="mt-[200px]" id="footer">
-    <div class="border-b-2"></div>
+<footer class="mt-[200px] footer-box-shadow">
+    {{!-- <div class="border-b-2"></div> --}}
     <div class="ml-[360px] mr-[360px] flex justify-between ">
         <div class="text-white">
             <img src="/assets/Footer/icon.svg" alt="" class=" mb-10 mt-14">
@@ -13,50 +13,46 @@
             </div>
             <span> <span class="text-[#505050]">Почта:</span> <br> info@mail.ru</span>
             <div class="flex mt-14">
-                <img class="mr-[19px]" src="/assets/Footer/vk.svg" alt="">
-                <img src="/assets/Footer/youtube.svg" alt="">
+                <a href="https://vk.com/"><img class="mr-[19px]" src="/assets/Footer/vk.svg" alt=""></a>
+                <a href="https://www.youtube.com/"><img src="/assets/Footer/youtube.svg" alt=""></a>
             </div>
         </div>
         <div class="text-white mt-[133px]">
             <div class="mb-4">
-                <span><a href="#advantages">Преимущества</a></span>
+                <span>Преимущества</span>
             </div>
             <div class="mb-4">
-                <span><a href="#review">Видеообзор</a></span>
+                <span>Видеообзор</span>
             </div>
             <div class="mb-4">
-                <span><a href="#specs">Характеристики</a></span>
+                <span>Характеристики</span>
             </div>
             <div>
-                <span><a href="#delivery">Доставка</a></span>
+                <span>Доставка</span>
             </div>
         </div>
         <div class="text-white mt-[133px]">
             <div class="mb-4">
-                <span><a href="#gallery">Галерея</a></span>
+                <span>Галерея</span>
             </div>
             <div class="mb-4">
-                <span><a href="#faq">FAQ</a></span>
+                <span>FAQ</span>
             </div>
             <div class="mb-4">
-                <span><a href="#reviews">Отзывы</a></span>
+                <span>Отзывы</span>
             </div>
             <div>
-                <span><a href="#articles">Блог</a></span>
-            </div>
-            <div>
-                <span><a href="#footer">Подписка</a></span>
+                <span>Блог</span>
             </div>
         </div>
         <div class=" mt-[133px]">
             <div class="mb-8">
-                <h1 class="text-white text-xl">Подпишитесь на наши <br> последние новости</h1>
+                <h1 class="text-white text-xl font-bold">Подпишитесь на наши <br> последние новости</h1>
             </div>
-            <div class="flex border-2 rounded-full max-w-[309px] ">
-                <img src="/assets/Footer/messase.svg" alt="" class="pl-4">
-                <span class="text-white pl-[18px] py-[10px]">Почта</span>
-            </div>
-            <div class="mb-10">
+                {{!-- <img src="/assets/Footer/messase.svg" alt="" class="pl-4"> --}}
+                {{!-- <span class="text-white pl-[18px] py-[10px]">Почта</span> --}}
+                <input class="rounded-[32px] h-[49px] w-[309px] bg-[url('/assets/Footer/messase.svg')] bg-no-repeat bg-mail-position placeholder:pl-[56px]" type="text" placeholder="Почта">
+            <div class="mb-10 mt-4">
                 <span class="text-white text-xs">Подписываясь на рассылку, вы соглашаетесь <br> с правилами о <span
                         class="gradient__text">политике
                         конфиденциальности</span></span>
