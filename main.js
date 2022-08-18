@@ -76,5 +76,5 @@ const splideArticles = new Splide('#image-carousel', {
     perPage: 2,
     type: 'loop',
     pagination: false,
-    gap: 15
+    gap: 40
 }).mount();
