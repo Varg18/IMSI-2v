@@ -66,3 +66,7 @@ p {
 .rotate__arrow {
     transform: rotate(180deg);
 }
+
+.thumbnail.is-active{
+    background-color: white;
+}
