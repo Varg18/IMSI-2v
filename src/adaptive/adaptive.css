@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+    .banner {
+        margin-top: 80px;
+        height: 730px;
+        max-width: 768px;
+    }
+
+    .layout-grid {
+        margin-right: 44px;
+        margin-left: 44px;
+        display: block;
+    }
+
+    .banner__wrapper {
+        margin-top: 400px;
+    }
+
+    .banner-img__container {
+        bottom: 850px;
+    }
+
+    .banner__img {
+        z-index: 1;
+    }
+
+    .banner__bg-gradient-1,
+    .banner__bg-gradient-2 {
+        z-index: 0;
+    }
+}

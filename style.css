@@ -2,6 +2,8 @@
 
 @tailwind base;
 @tailwind components;
+@tailwind utilities;
+
 .bg-mail-position {
   background-position: 7%;
 }
@@ -10,7 +12,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 0px 30px rgba(250, 113, 205, 0.4);
 }
-@tailwind utilities;
+
 
 #app {
   background-color: #0b0b0b;
@@ -28,11 +30,9 @@
   --gradient-blue: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
   --gradient-pink: linear-gradient(90deg, #c471f5 0%, #fa71cd 100%);
   --gradient-yellow: linear-gradient(90deg, #f9d423 0%, #ff4e50 100%);
-  --gradient-transparent: linear-gradient(
-    90deg,
-    rgba(196, 113, 245, 0.3) 0%,
-    rgba(250, 113, 205, 0.3) 100%
-  );
+  --gradient-transparent: linear-gradient(90deg,
+      rgba(196, 113, 245, 0.3) 0%,
+      rgba(250, 113, 205, 0.3) 100%);
   --color-grey: #505050;
   --color-black: #0b0b0b;
   --color-white: #ffffff;
@@ -45,7 +45,8 @@
 }
 
 body {
-  width: 1920px;
+  min-width: 375px;
+  max-width: 1920px;
   font-family: "Montserrat", "sans-serif";
   background-color: var(--color-black);
 }

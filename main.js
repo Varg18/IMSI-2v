@@ -8,6 +8,8 @@ import './src/delivery.css'
 import './colors.css'
 import './accordion.css'
 import './node_modules/@splidejs/splide/dist/css/splide.min.css'
+import './src/adaptive/adaptive.css'
+
 import Splide from '@splidejs/splide'
 import { gsap } from 'gsap'
 
@@ -78,3 +80,13 @@ const splideArticles = new Splide('#image-carousel', {
     pagination: false,
     gap: 40
 }).mount();
+
+function changeTab(evt, cityName) {
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active";
+}
+
+
