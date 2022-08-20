@@ -10,6 +10,7 @@ import './accordion.css'
 import './node_modules/@splidejs/splide/dist/css/splide.min.css'
 import './src/adaptive/adaptive.css'
 import './src/adaptive/Gallery-adaptive.css'
+import './src/modal.css'
 
 import Splide from '@splidejs/splide'
 import { gsap } from 'gsap'
