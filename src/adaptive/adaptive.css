@@ -258,7 +258,7 @@
         max-width: 600px;
     }
 
-    .border-2{
+    .reviews__container .border-2{
         height: 900px;
     }
 }
@@ -274,7 +274,7 @@
         max-width: 500px;
     }
 
-    .border-2{
+    .reviews__container .border-2{
         height: 1000px;
     }
 }
@@ -288,18 +288,18 @@
         margin-top: 4.5rem;
     }
 
-    .border-2{
+    .reviews__container .border-2{
         height: 1100px;
     }
 }
 
 @media (max-width: 768px)
 {
-    .border-2{
+    .reviews__container .border-2{
         height: 1500px;
     }
 
-    .last{
+    .reviews__container .last{
         height: 1000px;
     }
 }
