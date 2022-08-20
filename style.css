@@ -45,8 +45,8 @@
 }
 
 body {
-  min-width: 375px;
-  max-width: 1920px;
+  /* min-width: 375px;
+  max-width: 1920px; */
   font-family: "Montserrat", "sans-serif";
   background-color: var(--color-black);
 }

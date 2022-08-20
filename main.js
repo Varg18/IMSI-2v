@@ -9,6 +9,7 @@ import './colors.css'
 import './accordion.css'
 import './node_modules/@splidejs/splide/dist/css/splide.min.css'
 import './src/adaptive/adaptive.css'
+import './src/adaptive/Gallery-adaptive.css'
 
 import Splide from '@splidejs/splide'
 import { gsap } from 'gsap'
@@ -57,6 +58,16 @@ function createAnimation(element) {
 const splide = new Splide('.splide', {
     type: 'loop',
     arrows: false,
+    breakpoints: {
+        768: {
+            arrows: true,
+            pagination: true,
+        },
+        375: {
+            arrows: true,
+            pagination: true
+        }
+    },
     pagination: false,
     wheel: false //колесо для прокрутики
 }).mount();
@@ -78,7 +89,19 @@ const splideArticles = new Splide('#image-carousel', {
     perPage: 2,
     type: 'loop',
     pagination: false,
-    gap: 40
+    gap: 40,
+    breakpoints: {
+        768: {
+            fixedWidth: '563px',
+            perPage: 1.5,
+            perMove: 1
+        },
+        375: {
+            fixedWidth: '335px',
+            perPage: 1,
+            perMove: 1
+        }
+    }
 }).mount();
 
 function changeTab(evt, cityName) {

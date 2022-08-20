@@ -1,8 +1,12 @@
 @media screen and (max-width: 768px) {
     .banner {
         margin-top: 80px;
-        height: 730px;
+        height: 417px;
         max-width: 768px;
+    }
+
+    .thumbnails {
+        display: none;
     }
 
     .layout-grid {
@@ -17,6 +21,7 @@
 
     .banner-img__container {
         bottom: 850px;
+        margin-top: 144px;
     }
 
     .banner__img {
@@ -26,5 +31,213 @@
     .banner__bg-gradient-1,
     .banner__bg-gradient-2 {
         z-index: 0;
+    }
+
+    .advantages {
+        height: 865px;
+    }
+
+    .advantages__title {
+        margin-top: 16px;
+    }
+
+    .card {
+        height: 335px;
+        margin-top: 16px;
+    }
+
+    .review {
+        margin-top: 530px;
+    }
+
+    .review__title {
+        margin-top: 16px;
+    }
+
+    .video {
+        width: 680px;
+    }
+
+    .specs__title {
+        margin-top: 16px;
+    }
+
+    .specs__container__title {
+        margin-top: 80px;
+    }
+
+    .delivery__title {
+        margin-top: 16px;
+    }
+
+    .devivery__container {
+        display: flex;
+    }
+
+    .delivery__card-common {
+        height: 458px;
+    }
+
+    .delivery__card-1 {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .thumbnails {
+        display: none;
+    }
+
+    .banner {
+        margin-top: 80px;
+        height: 593px;
+        max-width: 375px;
+    }
+
+    .banner__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0.2px;
+        color: var(--color-white);
+    }
+
+    .layout-grid {
+        margin-right: 20px;
+        margin-left: 20px;
+        display: block;
+    }
+
+    .banner__wrapper {
+        margin-top: 56px;
+    }
+
+    .banner__img {
+        display: none;
+    }
+
+    .banner__btn {
+        display: block;
+    }
+
+    .banner__order_btn {
+        margin-bottom: 16px;
+    }
+
+    .advantages {
+        height: 589px;
+        margin-top: 300px;
+    }
+
+    .advantages__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .card {
+        height: 396px;
+    }
+
+    .card__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+    }
+
+    .card__descr {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        letter-spacing: 0.2px;
+    }
+
+    .review {
+        height: 432px;
+        margin-top: 975px;
+    }
+
+    .title-secondary__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .review__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .video {
+        width: 335px;
+        height: 200px;
+    }
+
+    .specs__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .package__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .type__descr {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .type__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+    }
+
+    .type__order {
+        display: block;
+    }
+
+    .old__price {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+    }
+
+    .new__price {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .order__btn {
+        margin-top: 32px;
+    }
+
+    .delivery__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    .devivery__container,
+    .delivery__card-common {
+        height: 615px;
+    }
+
+    .reviews {
+        display: block;
+    }
+
+    .sell {
+        width: 303px;
+        margin-top: 16px;
+        margin-left: -10px;
+        margin-right: 4rem;
     }
 }
