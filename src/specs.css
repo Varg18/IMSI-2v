@@ -39,16 +39,23 @@
     margin-bottom: 40px;
 }
 .type__bulk {
+    color: var(--color-white);
+    background: var(--color-transparent-white);
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 0.2px;
     padding: 16px 32px;
     border-radius: 32px;
-    color: #FA71CD;
-    background: var(--gradient-transparent);
     margin-right: 24px;
 }
+
+
+.package__btn button.active{
+    background: var(--gradient-transparent);
+    color: #FA71CD;
+}
+
 .type__oem {
     font-weight: 500;
     font-size: 18px;

@@ -15,6 +15,11 @@
         display: block;
     }
 
+    .video__container iframe{
+        width: 640px;
+        height: 360px;
+    }
+
     .banner__wrapper {
         margin-top: 400px;
     }
@@ -48,6 +53,7 @@
 
     .review {
         margin-top: 530px;
+        height: 540px;
     }
 
     .review__title {
@@ -76,10 +82,15 @@
 
     .delivery__card-common {
         height: 458px;
+        width: 328px;
     }
 
     .delivery__card-1 {
         margin-right: 24px;
+    }
+
+    .card {
+        height: 360px;
     }
 }
 
