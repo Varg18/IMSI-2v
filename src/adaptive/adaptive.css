@@ -15,6 +15,11 @@
         display: block;
     }
 
+    .video__container iframe{
+        width: 640px;
+        height: 360px;
+    }
+
     .banner__wrapper {
         margin-top: 400px;
     }
@@ -48,6 +53,7 @@
 
     .review {
         margin-top: 530px;
+        height: 540px;
     }
 
     .review__title {
@@ -76,10 +82,15 @@
 
     .delivery__card-common {
         height: 458px;
+        width: 328px;
     }
 
     .delivery__card-1 {
         margin-right: 24px;
+    }
+
+    .card {
+        height: 360px;
     }
 }
 
@@ -241,3 +252,55 @@
         margin-right: 4rem;
     }
 }
+
+@media screen and (max-width: 1700px){
+    .reviews__container p{
+        max-width: 600px;
+    }
+
+    .reviews__container .border-2{
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1650px){
+    .reviews__container p{
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 1650px){
+    .reviews__container p{
+        max-width: 500px;
+    }
+
+    .reviews__container .border-2{
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 1550px){
+    .reviews__container p{
+        max-width: 450px;
+    }
+
+    .reviews__container h1{
+        margin-top: 4.5rem;
+    }
+
+    .reviews__container .border-2{
+        height: 1100px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .reviews__container .border-2{
+        height: 1500px;
+    }
+
+    .reviews__container .last{
+        height: 1000px;
+    }
+}
+

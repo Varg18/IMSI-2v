@@ -166,3 +166,7 @@ h6 {
   background: var(--color-white);
   color: var(--color-black);
 }
+
+.input__mail{
+  padding-left: 50px;
+}

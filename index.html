@@ -8,6 +8,44 @@
 </head>
 
 <body>
+
+  <div class="modal" id="order__modal">
+    <div class="modal__content">
+      <span class="close"><img src="./assets/Modal/Cross.svg" alt="close"></span>
+      <div class="main__content">
+        <div class="advantages__title-secondary">
+          <div class="title-secondary__circle"></div>
+          <span class="title-secondary__text">Ваш заказ</span>
+        </div>
+        <h2 class="modal__title">Видеокарта IMSI GRTH 3122 SUPER</h2>
+        <div class="modal__complect">Bulk - комплектация</div>
+        <div class="modal__info">В ближайшее время по указанному телефону с вами свяжется наш оператор для дальнейшего уточнения деталей заказа.</div>
+
+        <div class="modal__forminfo">Все поля формы обязательны для заполнения</div>
+        <form action="">
+          <input
+          class="rounded-[8px] h-[49px] w-[580px] bg-[url('/assets/Modal/man.svg')] bg-no-repeat bg-mail-position modal-name"
+          type="text" placeholder="Имя">
+
+          <input
+          class="rounded-[8px] h-[49px] w-[580px] bg-[url('/assets/Modal/tel.svg')] bg-no-repeat bg-mail-position modal-name"
+          type="tel" placeholder="Телефон">
+
+          <input
+          class="rounded-[8px] h-[49px] w-[580px] bg-[url('/assets/Modal/message-icon.svg')] bg-no-repeat bg-mail-position modal-name"
+          type="text" placeholder="Электронная почта">
+        </form>
+
+        <div class="modal__policy">
+          Заполнив форму, вы соглашаетесь с правилами о <span>политике конфиденциальности</span>
+        </div>
+
+        <button id="close-modal">
+          Заказать
+        </button>
+      </div>
+    </div>
+  </div>
   <div id="app" class="2xl:max-w-[1920px] xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[375px]">
     <!-- <div class=""> -->
       {{> Header }}
@@ -27,5 +65,22 @@
   <script type="module" src="/main.js"></script>
   
 </body>
+<script>
+  function openModal() {
+    var modal = document.getElementById("order__modal");
+    var close = document.getElementsByClassName("close")[0];
+    var closeBtn = document.getElementById("close-modal");
 
+    
+    modal.style.display = "block";
+
+    close.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none"
+    }
+  }
+</script>
 </html>
