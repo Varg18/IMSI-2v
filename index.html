@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>IMSI</title>
 </head>
 
 <body>
@@ -47,7 +47,6 @@
     </div>
   </div>
   <div id="app" class="2xl:max-w-[1920px] xl:max-w-[1280px] lg:max-w-[1024px] md:max-w-[768px] sm:max-w-[375px]">
-    <!-- <div class=""> -->
       {{> Header }}
       {{> Banner }}
       {{> Advantages }}
@@ -60,16 +59,15 @@
       {{> Articles }}
       {{> Advertising }}
       {{> Footer}}
-    <!-- </div> -->
   </div>
   <script type="module" src="/main.js"></script>
   
 </body>
 <script>
   function openModal() {
-    var modal = document.getElementById("order__modal");
-    var close = document.getElementsByClassName("close")[0];
-    var closeBtn = document.getElementById("close-modal");
+    const modal = document.getElementById("order__modal");
+    const close = document.getElementsByClassName("close")[0];
+    const closeBtn = document.getElementById("close-modal");
 
     
     modal.style.display = "block";

@@ -13,11 +13,6 @@
   box-shadow: 0px 0px 30px rgba(250, 113, 205, 0.4);
 }
 
-
-#app {
-  background-color: #0b0b0b;
-}
-
 :root {
   --grid-col-count: 12;
   --grid-margin-x: 360px;
@@ -167,6 +162,6 @@ h6 {
   color: var(--color-black);
 }
 
-.input__mail{
+.input__mail {
   padding-left: 50px;
 }
